@@ -1,5 +1,6 @@
 //Hello World
-let count = 0;
+let count = 0; //Count
+//All functions
 function counter()
 {
      count++;
@@ -10,6 +11,7 @@ function counter()
           alert(`${count} is a multiple of 5`);
      }
 }
+//DOM Content Loaded
 document.addEventListener("DOMContentLoaded",function()
 {
      //Button

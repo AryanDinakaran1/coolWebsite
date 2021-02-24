@@ -25,4 +25,10 @@ document.addEventListener("DOMContentLoaded",function()
 
      //Counter
      document.querySelector("#count").onclick = counter;
+
+     //Select
+     document.querySelector("select").onchange = function()
+     {
+          document.querySelector("h2").style.color = this.value;
+     };
 });

@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded",function(){
-     document.querySelectorAll("button").forEach(button => {
-          button.onclick = function()
-          {
-               document.querySelector("h1").style.color = button.dataset.color;
-          };   
-     });
+     document.querySelector("form").onsubmit = function()
+     {
+          let fname = document.querySelector("#fname").value;
+          let lname = document.querySelector("#lname").value;
+
+          alert(`Hello, ${fname} ${lname}!`);
+
+     };
 });
